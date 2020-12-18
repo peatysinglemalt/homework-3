@@ -19,13 +19,13 @@ var generateBtn = document.querySelector("#generate");
 
 
 //1. prompts to alert useer input 
-function confirmlenght () {
+function confirmlength () {
   length = 0; 
 
   while (length < 8 || length > 128) {
     var length = prompt("Choose between a minimun of 8 characters and no more than 128 characters."); 
     if (length < 8 || length > 128) {
-      alert("Password length must be between 8 to 128 characters"); 
+      alert("Must enter a number between 8 to 128 characters"); 
     }
   }
   return length;
@@ -51,7 +51,28 @@ function confirmspecial () {
   return special; 
 }
 
+function generatePassword() {
+  var lowercase = false; 
+  var uppercase = false; 
+  var numeric = false; 
+  var special = false; 
 
+  var length = confirmlength (); 
+
+  while (lowercase == false && uppercase == false && numeric == false && special == false) {
+    var lowercase = confirmlowercase(); 
+    var uppercase = confirmuppercase(); 
+    var numeric = confirmnumeric(); 
+    var special = confirmspecial(); 
+
+    if (lowercase == false && uppercase == false && numeric == false && special == false) {
+      alert("Password must include at least one character type")
+    }
+  }
+
+
+
+}
 
 
 
