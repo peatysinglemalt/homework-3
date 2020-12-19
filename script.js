@@ -91,7 +91,6 @@ function generatePassword() {
   return gen; 
 }
 
-
 function string (lowercase, uppercase, numeric, special) {
   var passwordCombo = ' '; 
   
@@ -100,7 +99,7 @@ function string (lowercase, uppercase, numeric, special) {
   var numer = '0123456789';
   var speci = '!@#$%&*?.';
   var userInput = false;
-  
+
   console.log ("User input includes: " + lowercase + uppercase + numeric + special)
   
   if (lowercase == true) {
