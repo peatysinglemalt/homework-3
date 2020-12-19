@@ -6,24 +6,23 @@ JavaScript
 
 ## What you did
 
-- GIVEN I need a new, secure password
-- WHEN I click the button to generate a password
-- THEN I am presented with a series of prompts for password criteria
-- WHEN prompted for password criteria
-- THEN I select which criteria to include in the password
-- WHEN prompted for the length of the password
-- THEN I choose a length of at least 8 characters and no more than 128 characters
-- WHEN prompted for character types to include in the password
-- THEN I choose lowercase, uppercase, numeric, and/or special characters
-- WHEN I answer each prompt
-- THEN my input should be validated and at least one character type should be selected
-- WHEN all prompts are answered
-- THEN a password is generated that matches the selected criteria
-- WHEN the password is generated
-- THEN the password is either displayed in an alert or written to the page
+- created Password Generator that includes the combinations of lowercase, uppercase, numeric, and special characters  
+- created prompt when Generate a Password is clicked on the webpage 
+- prompts asks a user the following:
+-   1. enter the length of desired password (between 8 through 128 character)
+-   2. prompted to confirm desire for lowercase character 
+-   3. prompted to confirm desire for uppercase character 
+-   4. prompted to confirm desire for numeric character 
+-   5. prompted to confirm desire for special character 
+-   6. prompted to confirm desire for lowercase character 
+- set the function, and determine the variables of a password string that includes lowercase, uppercase, number, and special characters
+- utilized a while loop for confirm all answered prompts 
+- utilized for loop to iterate over the length of the password 
+- ultilized math.floor.math.random to generate password within the given criteria 
+- the password is displayed on the page
 
 ## Code Snippets With context as to why you are highlighting it (Do not highlight every line of code)
-Snippet of while loop between length of password
+Snippet of while loop and math.random code 
 
 <!-- function confirmlength () {
   length = 0; 
@@ -35,6 +34,13 @@ Snippet of while loop between length of password
   }
   return length;
 } 
+-----------------------------------
+
+  for (i = 0; i < length; i++) {
+    password = Math.floor(Math.random() * passwordCombo.length + 1); 
+    generate += passwordCombo.charAt(password);
+  }
+  return generate; 
 -->
 
 ## Who You Are (links to your LinkedIn & Portfolio - if one exists)

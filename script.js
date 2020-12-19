@@ -58,7 +58,42 @@ function confirmspecial() {
   return special; 
 }
 
-//3. after user confirm prompts, function to generate password 
+//3. create variables of character types for password combinations  
+function string (lowercase, uppercase, numeric, special) {
+  var passwordCombo = ' '; 
+  
+  var lowers = 'abdcdefghijklmnopqrstuvwxyz'; 
+  var uppers = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  var numerics = '0123456789';
+  var specials = '!@#$%&*?.';
+  var userInput = false;
+
+  console.log ("User input includes: " + lowercase + ", " + uppercase + ", " + numeric + ", " + special)
+  
+  if (lowercase == true) {
+    passwordCombo += lowers; 
+    userInput = true; 
+  }
+
+  if (uppercase == true) {
+    passwordCombo += uppers; 
+    userInput = true; 
+  }
+
+  if (numeric == true) {
+    passwordCombo += numerics; 
+    userInput = true; 
+  }
+
+  if (special == true) {
+    passwordCombo += specials; 
+    userInput = true; 
+  }
+
+  return passwordCombo;
+}
+
+//4. after user confirm prompts, function to generate password 
 function generatePassword() {
   var lowercase = false; 
   var uppercase = false; 
@@ -78,53 +113,17 @@ function generatePassword() {
     }
   }
 
-  alert("Click Ok to Generate Password"); 
-  var gen = ''; 
+  alert("Click OK to Generate Password"); 
+  var generate = ''; 
 
   var passwordCombo = string(lowercase, uppercase, numeric, special); 
 
-  //utilizing math.random to generate a random password combination within the given range 
+//5. utilize math.random to generate a random password combination within the given variables  
   for (i = 0; i < length; i++) {
     password = Math.floor(Math.random() * passwordCombo.length + 1); 
-    gen += passwordCombo.charAt(password);
+    generate += passwordCombo.charAt(password);
   }
-  return gen; 
-}
-
-function string (lowercase, uppercase, numeric, special) {
-  var passwordCombo = ' '; 
-  
-  var lower = 'abdcdefghijklmnopqrstuvwxyz'; 
-  var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  var numer = '0123456789';
-  var speci = '!@#$%&*?.';
-  var userInput = false;
-
-  console.log ("User input includes: " + lowercase + uppercase + numeric + special)
-  
-  if (lowercase == true) {
-    passwordCombo += lower; 
-    userInput = true; 
-  }
-
-  if (uppercase == true) {
-    passwordCombo += upper; 
-    userInput = true; 
-  }
-
-  if (numeric == true) {
-    passwordCombo += numer; 
-    userInput = true; 
-  }
-
-  if (special == true) {
-    passwordCombo += speci; 
-    userInput = true; 
-  }
-
-  return passwordCombo; 
-
-
+  return generate; 
 }
 
 
