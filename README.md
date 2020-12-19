@@ -45,9 +45,9 @@ function confirmlength () {
 
 ## Screenshots
 
-![screenshot 1](https://github.com/peatysinglemalt/homework-2/blob/main/Assets/Images/Screen%20Shot%202020-12-15%20at%2018.18.08.png)
-![screenshot 2](https://github.com/peatysinglemalt/homework-2/blob/main/Assets/Images/Screen%20Shot%202020-12-15%20at%2017.59.35.png)
-![screenshot 3](https://github.com/peatysinglemalt/homework-2/blob/main/Assets/Images/Screen%20Shot%202020-12-15%20at%2017.59.46.png)
+![screenshot 1](https://github.com/peatysinglemalt/homework-3/blob/main/Assets/Screen%20Shot%202020-12-18%20at%2016.25.12.png)
+![screenshot 2](https://github.com/peatysinglemalt/homework-3/blob/main/Assets/Screen%20Shot%202020-12-18%20at%2016.25.24.png)
+![screenshot 3](https://github.com/peatysinglemalt/homework-3/blob/main/Assets/Screen%20Shot%202020-12-18%20at%2016.25.38.png)
 
 ## User Story
 
