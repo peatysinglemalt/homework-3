@@ -24,8 +24,9 @@ JavaScript
 ## Code Snippets With context as to why you are highlighting it (Do not highlight every line of code)
 Snippet of while loop and math.random code 
 
-<!-- function confirmlength () {
+function confirmlength () {
   length = 0; 
+// while loop for length of password between 8 and 128 
   while (length < 8 || length > 128) {
     var length = prompt("Choose between a minimun of 8 characters and no more than 128 characters."); 
     if (length < 8 || length > 128) {
@@ -33,15 +34,15 @@ Snippet of while loop and math.random code
     }
   }
   return length;
-} 
------------------------------------
+}
+---------------------------
 
   for (i = 0; i < length; i++) {
     password = Math.floor(Math.random() * passwordCombo.length + 1); 
     generate += passwordCombo.charAt(password);
   }
   return generate; 
--->
+}
 
 ## Who You Are (links to your LinkedIn & Portfolio - if one exists)
 [LinkedIn](https://www.linkedin.com/in/matthewywu/)
