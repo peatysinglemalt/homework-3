@@ -22,7 +22,7 @@ JavaScript
 - the password is displayed on the page
 
 ## Code Snippets With context as to why you are highlighting it (Do not highlight every line of code)
-Snippet of while loop and math.random code 
+Snippet of function, varibles, and math.random code 
 
 ```
 function string (lowercase, uppercase, numeric, special) {
