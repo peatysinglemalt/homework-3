@@ -24,6 +24,7 @@ JavaScript
 ## Code Snippets With context as to why you are highlighting it (Do not highlight every line of code)
 Snippet of while loop and math.random code 
 
+```
 function string (lowercase, uppercase, numeric, special) {
   var passwordCombo = ' '; 
   
@@ -33,13 +34,14 @@ function string (lowercase, uppercase, numeric, special) {
   var specials = '!@#$%&*?.';
   var userInput = false;
   
-  **************************************
+ --------------------------------------
   
     for (i = 0; i < length; i++) {
     password = Math.floor(Math.random() * passwordCombo.length + 1); 
     generate += passwordCombo.charAt(password);
   }
   return generate; 
+```
 
 ## Who You Are (links to your LinkedIn & Portfolio - if one exists)
 [LinkedIn](https://www.linkedin.com/in/matthewywu/)
