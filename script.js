@@ -74,7 +74,7 @@ function generatePassword() {
     var special = confirmspecial(); 
 
     if (lowercase == false && uppercase == false && numeric == false && special == false) {
-      alert("Password must include at least one character type")
+      alert("Password must include one of the following character types: uppercase, lowercase, numeric, special.")
     }
   }
 
